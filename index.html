@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waste Collection Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Waste Collection Tracker</h1>
+    <p>Find where to drop your waste, what each centre accepts, and when it is open.</p>
+  </header>
+
+  <main>
+    <aside>
+      <input id="search" type="search" placeholder="Search by name or area">
+
+      <div class="filters">
+        <label for="typeFilter">Waste type</label>
+        <select id="typeFilter"></select>
+        <label class="check"><input id="openNow" type="checkbox"> Open now only</label>
+      </div>
+
+      <p id="count"></p>
+      <ul id="list"></ul>
+    </aside>
+
+    <div id="map"></div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
